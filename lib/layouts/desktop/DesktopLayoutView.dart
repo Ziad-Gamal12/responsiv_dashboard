@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_dashboard/core/widgets/AllexpensesAndQuickInvoicesection.dart';
 import 'package:responsive_dashboard/core/widgets/CustomDrawer.dart';
 
 class Desktoplayoutview extends StatelessWidget {
@@ -6,8 +7,11 @@ class Desktoplayoutview extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [Expanded(child: Customdrawer())],
+    return const Row(
+      children: [
+        Expanded(child: Customdrawer()),
+        Expanded(flex: 3, child: AllexpensesAndQuickInvoicesection())
+      ],
     );
   }
 }

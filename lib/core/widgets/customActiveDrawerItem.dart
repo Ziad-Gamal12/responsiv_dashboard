@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:responsive_dashboard/core/utils/AppTextStyles.dart';
 
 class Customactivedraweritem extends StatelessWidget {
@@ -23,6 +24,6 @@ class Customactivedraweritem extends StatelessWidget {
         width: 3.27,
         color: const Color(0xff4EB7F2),
       ),
-    );
+    ).animate().fade(duration: 300.ms).moveX(begin: -50, duration: 300.ms);
   }
 }

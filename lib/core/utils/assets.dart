@@ -26,17 +26,25 @@ class Assets {
   /// assets/images/arrow-down_icon.svg
   static const String assetsImagesArrowDownIcon = "assets/images/arrow-down_icon.svg";
 
+  /// Assets for assetsImagesArrowRight
+  /// assets/images/arrow-right.svg
+  static const String assetsImagesArrowRight = "assets/images/arrow-right.svg";
+
   /// Assets for assetsImagesBalanceIcon
   /// assets/images/Balance_icon.svg
   static const String assetsImagesBalanceIcon = "assets/images/Balance_icon.svg";
+
+  /// Assets for assetsImagesCardReceive
+  /// assets/images/card-receive.png
+  static const String assetsImagesCardReceive = "assets/images/card-receive.png";
 
   /// Assets for assetsImagesDashboardIcon
   /// assets/images/DashboardIcon.svg
   static const String assetsImagesDashboardIcon = "assets/images/DashboardIcon.svg";
 
   /// Assets for assetsImagesExpensesIcon
-  /// assets/images/Expenses_icon.svg
-  static const String assetsImagesExpensesIcon = "assets/images/Expenses_icon.svg";
+  /// assets/images/Expenses_icon.png
+  static const String assetsImagesExpensesIcon = "assets/images/Expenses_icon.png";
 
   /// Assets for assetsImagesIncomeIcon
   /// assets/images/income_icon.svg
@@ -49,6 +57,10 @@ class Assets {
   /// Assets for assetsImagesLogoutIcon
   /// assets/images/logout_icon.svg
   static const String assetsImagesLogoutIcon = "assets/images/logout_icon.svg";
+
+  /// Assets for assetsImagesMoneys
+  /// assets/images/moneys.svg
+  static const String assetsImagesMoneys = "assets/images/moneys.svg";
 
   /// Assets for assetsImagesMyCardImage
   /// assets/images/MyCard_image.svg

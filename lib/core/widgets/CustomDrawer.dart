@@ -19,42 +19,54 @@ class _CustomdrawerState extends State<Customdrawer> {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      child: Column(
-        children: [
-          const Customlisttilewidget(
-              title: "Lekan Okeowo",
-              subtitle: "demo@gmail.com",
-              image: Assets.assetsImagesUserIcon),
-          const SizedBox(
-            height: 8,
+      child: CustomScrollView(
+        slivers: [
+          const SliverToBoxAdapter(
+            child: Customlisttilewidget(
+                title: "Lekan Okeowo",
+                subtitle: "demo@gmail.com",
+                image: Assets.assetsImagesUserIcon),
           ),
-          Column(
+          const SliverToBoxAdapter(
+            child: SizedBox(
+              height: 8,
+            ),
+          ),
+          SliverToBoxAdapter(
+              child: Column(
             children: Draweritemmodel.toList().asMap().entries.map((e) {
               return InkWell(
-                onTap: () {
-                  setState(() {
-                    currentdraweritemIndex = e.key;
-                  });
-                },
-                child: Draweritem(
-                    isSelected: currentdraweritemIndex == e.key ? true : false,
-                    draweritementity: e.value),
-              );
+                  onTap: () {
+                    setState(() {
+                      currentdraweritemIndex = e.key;
+                    });
+                  },
+                  child: Draweritem(
+                      isSelected:
+                          currentdraweritemIndex == e.key ? true : false,
+                      draweritementity: e.value));
             }).toList(),
+          )),
+          const SliverFillRemaining(
+            hasScrollBody: false,
+            child: Column(
+              children: [
+                Spacer(),
+                Custominactivedraweritem(
+                    inactiveImage: Assets.assetsImagesSettingIcon,
+                    title: "Setting system"),
+                SizedBox(
+                  height: 20,
+                ),
+                Custominactivedraweritem(
+                    inactiveImage: Assets.assetsImagesLogoutIcon,
+                    title: "Logout account"),
+                SizedBox(
+                  height: 48,
+                ),
+              ],
+            ),
           ),
-          const Spacer(),
-          const Custominactivedraweritem(
-              inactiveImage: Assets.assetsImagesSettingIcon,
-              title: "Setting system"),
-          const SizedBox(
-            height: 20,
-          ),
-          const Custominactivedraweritem(
-              inactiveImage: Assets.assetsImagesLogoutIcon,
-              title: "Logout account"),
-          const SizedBox(
-            height: 48,
-          )
         ],
       ),
     );
