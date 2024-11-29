@@ -23,6 +23,7 @@ class Activeallexpensesitem extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               CircleAvatar(
                 radius: 25,
@@ -37,14 +38,11 @@ class Activeallexpensesitem extends StatelessWidget {
                   ),
                 ),
               ),
-              const Spacer(),
               SvgPicture.asset(Assets.assetsImagesArrowRight)
             ],
           ),
-          const Expanded(
-            child: SizedBox(
-              height: 34,
-            ),
+          const SizedBox(
+            height: 34,
           ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
