@@ -12,7 +12,12 @@ class AllexpensesAndQuickInvoicesection extends StatelessWidget {
       slivers: [
         SliverToBoxAdapter(
           child: Padding(
-            padding: const EdgeInsets.all(20),
+            padding: const EdgeInsets.only(
+              top: 40,
+              bottom: 32,
+              left: 32,
+              right: 24,
+            ),
             child: Column(
               children: [
                 const Allexpensessection(),
