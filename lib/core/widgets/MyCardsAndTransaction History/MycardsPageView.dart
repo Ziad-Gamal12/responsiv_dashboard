@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/core/utils/Variables.dart';
-import 'package:responsive_dashboard/core/widgets/CustomMyCardItem.dart';
+import 'package:responsive_dashboard/core/widgets/MyCardsAndTransaction%20History/CustomMyCardItem.dart';
 
 class Mycardspageview extends StatelessWidget {
   const Mycardspageview({super.key});

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/core/models/drawerItemModel.dart';
 import 'package:responsive_dashboard/core/utils/assets.dart';
-import 'package:responsive_dashboard/core/widgets/CustomInActiveDrawerItem.dart';
-import 'package:responsive_dashboard/core/widgets/DrawerItem.dart';
+import 'package:responsive_dashboard/core/widgets/Drawer/CustomInActiveDrawerItem.dart';
+import 'package:responsive_dashboard/core/widgets/Drawer/DrawerItem.dart';
 import 'package:responsive_dashboard/core/widgets/customListTileWidget.dart';
 
 class Customdrawer extends StatefulWidget {

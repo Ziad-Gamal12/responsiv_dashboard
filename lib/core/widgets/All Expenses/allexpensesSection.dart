@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_dashboard/core/models/allExpensesItemModel.dart';
-import 'package:responsive_dashboard/core/widgets/AllexpensesItem.dart';
-import 'package:responsive_dashboard/core/widgets/allExpensesHeader.dart';
+import 'package:responsive_dashboard/core/widgets/All%20Expenses/AllexpensesItem.dart';
+import 'package:responsive_dashboard/core/widgets/All%20Expenses/allExpensesHeader.dart';
 import 'package:responsive_dashboard/core/widgets/customBackgroundContainer.dart';
 
 class Allexpensessection extends StatefulWidget {

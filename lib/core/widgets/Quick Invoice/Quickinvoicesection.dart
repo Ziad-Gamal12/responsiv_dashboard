@@ -5,10 +5,10 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:responsive_dashboard/core/entities/quickInvoiceFormTextFieldsEntity.dart';
 import 'package:responsive_dashboard/core/models/QuickinvoiceformtextfieldsModle.dart';
 import 'package:responsive_dashboard/core/widgets/CustomButton.dart';
-import 'package:responsive_dashboard/core/widgets/LatestTransactioHeader.dart';
-import 'package:responsive_dashboard/core/widgets/LatestTransactionListView.dart';
-import 'package:responsive_dashboard/core/widgets/QuickInvoiceForm.dart';
-import 'package:responsive_dashboard/core/widgets/QuickInvoiceHeader.dart';
+import 'package:responsive_dashboard/core/widgets/Quick%20Invoice/LatestTransactioHeader.dart';
+import 'package:responsive_dashboard/core/widgets/Quick%20Invoice/LatestTransactionListView.dart';
+import 'package:responsive_dashboard/core/widgets/Quick%20Invoice/QuickInvoiceForm.dart';
+import 'package:responsive_dashboard/core/widgets/Quick%20Invoice/QuickInvoiceHeader.dart';
 import 'package:responsive_dashboard/core/widgets/customBackgroundContainer.dart';
 
 class Quickinvoicesection extends StatelessWidget {
